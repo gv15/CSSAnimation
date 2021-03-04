@@ -9,41 +9,37 @@
         body{
             width:1532px;
             height:758px;
-            overflow: hidden;
+           
         }
         img{
+            position:absolute;
+            top:0%;
+            right:45%;
             /* transform: translate(700px,10px); */
             animation-name:football;
             animation-duration:8s;
             animation-iteration-count: infinite;
+            animation-timing-function:linear;
         }
         @keyframes football {
             0%{
-                transform: translate(700px,5px);
+                transform: translate(45%, 2%);
             }
-            23%{
-                transform: translate(1406px,300px);
-            }
+            
             25%{
-                transform: translate(1406px,300px);
+                transform: translate(90%, 45%);
             }
-            47%{
-                transform: translate(700px,625px);
-            }
+           
             50%{
-                transform: translate(700px,625px);
+                transform: translate(45%,90%);
             }
-            73%{
-                transform: translate(5px,300px);
-            }
+           
             75%{
-                transform: translate(5px,300px);
+                transform: translate(2%,45%);
             }
-            98%{
-                transform: translate(700px,5px);
-            }
+            
             100%{
-                transform: translate(700px,5px);
+                transform: translate(45%, 2%);
             }
         }
     </style>

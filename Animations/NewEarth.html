@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth Animation</title>
+    <style>
+        div{
+            text-align: center;
+        }
+        div img:last-child {
+            height: 128px;
+            width: 128px;
+            transform: translateX(200px);
+            animation:earth 2s infinite;
+        }
+        @keyframes earth{
+            from{
+                transform:translate(650px, 10px) rotate(0deg);
+            }
+            to{
+                transform:translate(650px, 10px) rotate(360deg);
+            }
+        }
+        div img:first-child {
+            /* text-align: center; */
+            /* height:128px;
+           width:128px;
+           transform:translateX(200px); */
+            position:absolute;
+            top:100px;
+            right:650px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="http://pngimg.com/uploads/sun/sun_PNG13425.png" alt="">
+        <img src="https://icons.iconarchive.com/icons/dan-wiersma/solar-system/256/Earth-icon.png" alt="">
+    </div>
+</body>
+
+</html>
