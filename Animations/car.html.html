@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Animation</title>
+    <style>
+        img{
+            width:15%;
+           position:absolute;
+           bottom:2%;
+                left:40%;
+           animation:car 10s linear infinite;
+        }
+        @keyframes car{
+            0%{
+                bottom:2%;
+                left:40%;
+            }
+            23%{
+                bottom:2%;
+                left:3px;
+                transform: rotate(0deg);
+            }
+           25%{
+               transform: rotate(90deg);
+           }
+          
+            48%{
+                bottom:80%;
+                left:3px;
+                transform:rotate(90deg)
+            }
+            73%{
+                left:82%;
+                bottom:80%;
+                transform: rotateZ(360deg);
+            }
+            
+            100%{
+                bottom:2%;
+                left:40%;
+                transform: rotate(315deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <img src="https://purepng.com/public/uploads/large/purepng.com-car-top-viewcarscar-top-view-961524670079fkdn8.png" alt="">
+</body>
+</html>
