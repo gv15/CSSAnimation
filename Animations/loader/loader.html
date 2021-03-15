@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gmail Loader</title>
     <style>
-        div{
+        .upper{
             height:4px;
             /* width:4px; */
             position: absolute;
@@ -14,6 +14,14 @@
             left:40%;
             background-color: #C1372D;
             animation: load 2s infinite linear;
+        }
+        .under{
+            position:absolute;
+            top:70%;
+            left:40%;
+            background-color: #F0F1EF;
+            height:4px;
+            width:320px;
         }
         p{
             font-weight: 500;
@@ -35,8 +43,11 @@
     </style>
 </head>
 <body>
+    <div class="under">
+
+    </div>
     
-    <div>
+    <div class="upper">
 
     </div>
     <p>Loading Gmail</p>
